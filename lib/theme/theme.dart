@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+TextStyle columnTitleStyle = TextStyle(
+  fontSize: 28,
+  fontWeight: FontWeight.w900,
+);
+
 ThemeData appTheme = ThemeData(
   colorScheme: ColorScheme.fromSeed(
     seedColor: Colors.black,

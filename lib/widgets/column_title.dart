@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../theme/theme.dart';
 
 class ColumnTitle extends StatefulWidget {
   const ColumnTitle({super.key, required this.title});
@@ -12,9 +13,12 @@ class ColumnTitle extends StatefulWidget {
 class _ColumnTitleState extends State<ColumnTitle> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
+    return Container(
+      alignment: Alignment.topCenter,
+      padding: const EdgeInsets.only(top: 10.0),
+      child: Text(
+        widget.title,
+        style: columnTitleStyle,
       ),
     );
   }
