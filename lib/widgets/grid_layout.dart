@@ -15,15 +15,15 @@ class GridLayout extends StatelessWidget {
         columnSpanCells: [
           WoltColumnSpanCell(
             columnCellWidget: Placeholder(color: Colors.blue, strokeWidth: 4),
-            columnSpan: 4,
+            columnSpan: 1,
           ),
           WoltColumnSpanCell(
             columnCellWidget: Placeholder(color: Colors.red, strokeWidth: 4),
-            columnSpan: 6,
+            columnSpan: 1,
           ),
           WoltColumnSpanCell(
             columnCellWidget: Placeholder(color: Colors.green, strokeWidth: 4),
-            columnSpan: 2,
+            columnSpan: 1,
           ),
         ],
       )),
