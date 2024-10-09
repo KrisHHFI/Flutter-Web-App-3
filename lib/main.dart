@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'widgets/grid_layout.dart';
 import 'widgets/top_bar.dart';
 import 'theme/theme.dart';
 
@@ -12,9 +13,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Pauli\'s Pizza',
+      title: 'Pauli\'s Pizza', // Browser tab title
       theme: appTheme,
-      home: const TopBar(title: 'Orders'),
+      home: Scaffold(
+        body: Column(
+          children: [
+            const TopBar(title: 'Orders'),
+            Expanded(
+              // Expanded fills the available space
+              child: GridLayout(),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
