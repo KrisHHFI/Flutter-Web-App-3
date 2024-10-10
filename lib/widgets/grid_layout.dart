@@ -19,9 +19,9 @@ class GridLayout extends StatelessWidget {
             columnCellWidget: Column(
               children: [
                 ColumnTitle(title: "Completed"),
-                GridItem(title: "#791, Mika M"),
-                GridItem(title: "#322, Sari S"),
-                GridItem(title: "#112, Merja M"),
+                GridItem(order: "Pepperoni", title: "#791, Mika M"),
+                GridItem(order: "Neapolitan", title: "#322, Sari S"),
+                GridItem(order: "Margherita", title: "#112, Merja M"),
               ],
             ),
             columnSpan: 1,
@@ -30,8 +30,8 @@ class GridLayout extends StatelessWidget {
             columnCellWidget: Column(
               children: [
                 ColumnTitle(title: "Ongoing"),
-                GridItem(title: "#345, Juho J"),
-                GridItem(title: "#221, Joni J"),
+                GridItem(order: "Neapolitan", title: "#345, Juho J"),
+                GridItem(order: "Pepperoni", title: "#221, Joni J"),
               ],
             ),
             columnSpan: 1,
@@ -40,13 +40,13 @@ class GridLayout extends StatelessWidget {
             columnCellWidget: Column(
               children: [
                 ColumnTitle(title: "Backlog"),
-                GridItem(title: "#233, Jani J"),
-                GridItem(title: "#256, Päivi P"),
-                GridItem(title: "#952, Petri P"),
-                GridItem(title: "#952, Suvi S"),
-                GridItem(title: "#951, Mikko M"),
-                GridItem(title: "#332, Sanna S"),
-                GridItem(title: "#711, Maria M"),
+                GridItem(order: "Margherita", title: "#233, Jani J"),
+                GridItem(order: "Hawaiian", title: "#256, Päivi P"),
+                GridItem(order: "Margherita", title: "#952, Petri P"),
+                GridItem(order: "Pepperoni", title: "#952, Suvi S"),
+                GridItem(order: "Hawaiian", title: "#951, Mikko M"),
+                GridItem(order: "Neapolitan", title: "#332, Sanna S"),
+                GridItem(order: "Pepperoni", title: "#711, Maria M"),
               ],
             ),
             columnSpan: 1,
