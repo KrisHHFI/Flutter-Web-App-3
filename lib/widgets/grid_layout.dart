@@ -18,10 +18,14 @@ class GridLayout extends StatelessWidget {
           WoltColumnSpanCell(
             columnCellWidget: Column(
               children: [
-                ColumnTitle(title: "Completed"),
-                GridItem(order: "Pepperoni", title: "#791, Mika M"),
-                GridItem(order: "Neapolitan", title: "#322, Sari S"),
-                GridItem(order: "Margherita", title: "#112, Merja M"),
+                ColumnTitle(title: "Incoming"),
+                GridItem(order: "Margherita", title: "#233, Jani J"),
+                GridItem(order: "Hawaiian", title: "#256, Päivi P"),
+                GridItem(order: "Margherita", title: "#952, Petri P"),
+                GridItem(order: "Pepperoni", title: "#952, Suvi S"),
+                GridItem(order: "Hawaiian", title: "#951, Mikko M"),
+                GridItem(order: "Neapolitan", title: "#332, Sanna S"),
+                GridItem(order: "Pepperoni", title: "#711, Maria M"),
               ],
             ),
             columnSpan: 1,
@@ -29,7 +33,7 @@ class GridLayout extends StatelessWidget {
           WoltColumnSpanCell(
             columnCellWidget: Column(
               children: [
-                ColumnTitle(title: "Ongoing"),
+                ColumnTitle(title: "Outgoing"),
                 GridItem(order: "Neapolitan", title: "#345, Juho J"),
                 GridItem(order: "Pepperoni", title: "#221, Joni J"),
               ],
@@ -39,14 +43,10 @@ class GridLayout extends StatelessWidget {
           WoltColumnSpanCell(
             columnCellWidget: Column(
               children: [
-                ColumnTitle(title: "Backlog"),
-                GridItem(order: "Margherita", title: "#233, Jani J"),
-                GridItem(order: "Hawaiian", title: "#256, Päivi P"),
-                GridItem(order: "Margherita", title: "#952, Petri P"),
-                GridItem(order: "Pepperoni", title: "#952, Suvi S"),
-                GridItem(order: "Hawaiian", title: "#951, Mikko M"),
-                GridItem(order: "Neapolitan", title: "#332, Sanna S"),
-                GridItem(order: "Pepperoni", title: "#711, Maria M"),
+                ColumnTitle(title: "Ready"),
+                GridItem(order: "Pepperoni", title: "#791, Mika M"),
+                GridItem(order: "Neapolitan", title: "#322, Sari S"),
+                GridItem(order: "Margherita", title: "#112, Merja M"),
               ],
             ),
             columnSpan: 1,
