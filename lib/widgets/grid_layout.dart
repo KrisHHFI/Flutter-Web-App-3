@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wolt_responsive_layout_grid/wolt_responsive_layout_grid.dart';
 import './column_title.dart';
+import './grid_item.dart';
 
 class GridLayout extends StatelessWidget {
   const GridLayout({super.key});
@@ -15,15 +16,30 @@ class GridLayout extends StatelessWidget {
         margin: 32,
         columnSpanCells: [
           WoltColumnSpanCell(
-            columnCellWidget: ColumnTitle(title: "Completed"),
+            columnCellWidget: Column(
+              children: [
+                ColumnTitle(title: "Completed"),
+                GridItem(title: "Item"),
+              ],
+            ),
             columnSpan: 1,
           ),
           WoltColumnSpanCell(
-            columnCellWidget: ColumnTitle(title: "Ongoing"),
+            columnCellWidget: Column(
+              children: [
+                ColumnTitle(title: "Ongoing"),
+                GridItem(title: "Item"),
+              ],
+            ),
             columnSpan: 1,
           ),
           WoltColumnSpanCell(
-            columnCellWidget: ColumnTitle(title: "Backlog"),
+            columnCellWidget: Column(
+              children: [
+                ColumnTitle(title: "Backlog"),
+                GridItem(title: "Item"),
+              ],
+            ),
             columnSpan: 1,
           ),
         ],

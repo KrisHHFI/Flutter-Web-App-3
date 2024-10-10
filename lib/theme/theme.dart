@@ -5,6 +5,11 @@ TextStyle columnTitleStyle = TextStyle(
   fontWeight: FontWeight.w900,
 );
 
+TextStyle gridItemStyle = TextStyle(
+  fontSize: 28,
+  fontWeight: FontWeight.w900,
+);
+
 ThemeData appTheme = ThemeData(
   colorScheme: ColorScheme.fromSeed(
     seedColor: Colors.black,
